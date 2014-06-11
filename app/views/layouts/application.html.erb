@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dmitri Linde</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="site-header">
+    <h2><%= link_to "Dmitri Linde", "/" %></h2>
+    <ul id="site-header-links">
+      <li><%= link_to "About", "/about"%></li>
+      <li><%= link_to "Projects", "/projects"%></li>
+      <li><%= link_to "Resume", "/resume"%></li>
+      <li><%= link_to "Contact", "/contact"%></li>
+    </ul>
+  </div>
+
+  <div id="page-header">
+    <h1><%= @header %></h1>
+  </div>
+
+  <%= yield %>
+
+  <div id="page-footer">
+    <p>Dmitri Linde</p>
+    <p>
+      Connect:
+      <a href="https://www.linkedin.com/pub/dmitri-linde/62/28b/529">LinkedIn</a>
+    </p>
+  </div>
+
+</body>
+</html>
