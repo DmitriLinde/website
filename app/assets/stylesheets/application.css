@@ -13,3 +13,186 @@
  *= require_tree .
  *= require_self
  */
+
+/* General */
+
+html, body, div, ul, li, nav, header, a, h1, article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+article, header, nav {
+    display: block;
+}
+
+html {
+  line-height: 1;
+}
+
+body, input, button, textarea {
+  font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+/* Header */
+
+.all-but-footer {
+  min-height: 102%;
+  min-width: 100%;
+}
+
+.site-header {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 10px 14px 10px;
+}
+
+.site-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-header-logo {
+  width: 100%;
+  float: left;
+  margin-right: 1.2%;
+}
+
+.logo {
+  position: absolute;
+  display: block;
+  width: 62px;
+  height: 25px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: -4px;
+}
+
+.site-header-flexible-nav {
+  text-align: right;
+}
+
+.site-header-links {
+  list-style: none;
+}
+
+.site-header-links > .nav_item {
+  display: inline;
+  padding: 0 0 0 2em;
+}
+
+.nav_item:first-child {
+  padding-left: 0;
+}
+
+.nav_item_link {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.notifications {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  z-index: 999;
+}
+
+.page-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f3f3f3;
+}
+
+.page-header-inner {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 51px;
+}
+
+.page-title-unit {
+  margin-top: 4px;
+}
+
+.page-title {
+  font-size: 36px;
+  line-height: 1.2;
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Light","Helvetica Neue," Helvetica,Arial,sans-serif;
+  font-weight: 300;
+}
+
+/* Page */
+
+.page-content {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Footer */
+
+.page-footer {
+  color: #6f6f6f;
+  background-color: #333;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: -16px;
+}
+
+.page-footer-nav {
+  padding: 40px 1.618em 20px;
+}
+
+.nav-inline-item:first-child {
+  margin-left: 0;
+  display: inline-block;
+}
+
+.nav-inline-item-first > span {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.nav-inline-item {
+  margin-left: 1.618em;
+  display: inline-block;
+}
+
+.page-footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-footer-text {
+  padding-bottom: 48px;
+}
