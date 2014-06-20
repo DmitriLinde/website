@@ -1,6 +1,12 @@
 class WelcomeController < ApplicationController
+  $headers = {
+    'Home' => '/',
+    'About' => '/about',
+    'Projects' => '/projects',
+    'Contact' => '/contact' }
+
   def index
-    @header = "Index"
+    @header = "Home"
   end
 
   def about
@@ -9,10 +15,6 @@ class WelcomeController < ApplicationController
 
   def projects
     @header = "Projects"
-  end
-
-  def resume
-    @header = "Resume"
   end
 
   def contact
