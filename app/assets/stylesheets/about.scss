@@ -1,0 +1,74 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.picture {
+    text-align: center;
+}
+
+.highlight {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.class {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Light","Helvetica Neue," Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    padding-top: 2px;
+    padding-bottom: 25px;
+}
+
+.info-nav {
+    margin: 0 15px 0 15px;
+    list-style: none;
+
+    a {
+        color: #000;
+        text-decoration: none;
+        font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Light","Helvetica Neue," Helvetica,Arial,sans-serif;
+        font-weight: 300;
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    a:hover {
+        color: #A9A9A9;
+    }
+}
+
+.bear-left {
+    float: left;
+
+    li > a {
+        float: left;
+    }
+}
+
+.bear-right {
+    float: right;
+
+    li > a {
+        float: right;
+    }
+}
+
+@media (max-width: 765px) {
+    .info-nav-div {
+        margin-top: -126px;
+    }
+
+    h1, h3 {
+        text-align: center;
+    }
+
+    .highlight {
+        margin-top: 20px;
+    }
+}

@@ -1,49 +1,64 @@
 <% provide(:title, 'About') %>
 
-<h2> Dmitri Linde </h2>
+<div class="row-fluid">
+    <div class="span12">
+        <h1> Dmitri Linde </h1>
+        <h3 class="class"> Software Developer </h3>
 
-<h3> Software Developer </h3>
-
-<div class="picture">
-
-</div>
-
-<div class="box-1">
-    <p class="highlight">
-        Well, Hello There!
-    </p>
-
-    <p>
-        A
-        B
-        C
-        D
-    </p>
-</div>
-
-<div class="box-2">
-
-</div>
-
-<div class="box-3">
-    <nav>
-        <ul>
-            <li>LinkedIn</li>
-            <li>Facebook</li>
-            <li>E-mail</li>
-        </ul>
-    </nav>
-</div>
-
-<div class="box-4">
-    <p class="highlight">
-        Needless to say,
-    </p>
-
-    <p>
-        A
-        B
-        C
-        D
-    </p>
+        <div class="row-fluid">
+            <div class="span4 picture">
+                <%= image_tag("hiking.jpg", alt: "rss feed")%>
+            </div>
+            <div class="span8">
+                <div class="row-fluid">
+                    <div class="span6">
+                        <p class="highlight">Glad you could make it</p>
+                        <p>
+                            I'm a software engineer currently based out of Boston,
+                            Massachusetts. I enjoy creating intuitive applications
+                            which simplify our daily routines and seamlessly mold
+                            into our lives, giving us more time to enjoy the things we love.
+                        </p>
+                    </div>
+                    <div class="span6" style="min-height: 125px;">
+                        <ul class="info-nav bear-left">
+                            <% $headers.each do |header, link| %>
+                                <% if header != "About" %>
+                                    <li><%= link_to header, link %></li>
+                                <% end %>
+                            <% end %>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span6 info-nav-div" style="min-height: 125px;">
+                        <ul class="info-nav bear-right">
+                            <li>
+                                <%= link_to "LinkedIn",
+                                    "https://www.linkedin.com/pub/dmitri-linde/62/28b/529"%>
+                            </li>
+                            <li>
+                                <%= link_to "Facebook",
+                                    "https://www.facebook.com/linde.dmitri"%>
+                            </li>
+                            <li>
+                                <%= mail_to "linde.dmitri@gmail.com",
+                                    "Email"%>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span6">
+                        <p class="highlight">Needless to say,</p>
+                        <p>
+                            I'm a minimalist by nature, especially when it comes
+                            to design. I am highly detail oriented and employ both
+                            agile and performance driven development. My key
+                            interests include collective intelligence, application
+                            and workflow efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
