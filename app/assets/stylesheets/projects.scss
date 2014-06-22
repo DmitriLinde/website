@@ -50,3 +50,27 @@ hr {
 .featurette-image {
     margin-top: -120px;
 }
+
+@media (max-width: 979px) {
+    .featurette-image.pull-left, .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .featurette-heading {
+        font-size: 30px;
+    }
+
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+}
