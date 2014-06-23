@@ -1,0 +1,38 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.contact-img-div {
+    text-align: center;
+}
+
+@media (max-width: 979px) {
+    .contact-img {
+        display: block;
+        float: none;
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-img {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+}

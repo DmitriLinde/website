@@ -1,1 +1,33 @@
 <% provide(:title, 'Contact') %>
+
+<hr class="first-featurette-divider">
+
+<div class="row-fluid">
+    <div class="span12">
+        <div class="contact-img-div span4">
+            <%= mail_to "linde.dmitri@gmail.com",
+                image_tag(
+                    "email.png",
+                    alt: "rss feed",
+                    class: "contact-img")%>
+        </div>
+        <div class="contact-img-div span4">
+            <%= link_to \
+                image_tag(
+                    "linked_in.png",
+                    alt: "rss feed",
+                    class: "contact-img"),
+                "https://www.linkedin.com/pub/dmitri-linde/62/28b/529"%>
+        </div>
+        <div class="contact-img-div span4">
+            <%= link_to \
+                image_tag(
+                    "facebook.png",
+                    alt: "rss feed",
+                    class: "contact-img"),
+                "https://www.facebook.com/linde.dmitri"%>
+        </div>
+    </div>
+</div>
+
+<hr class="featurette-divider">
