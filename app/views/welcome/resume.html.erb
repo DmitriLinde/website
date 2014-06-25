@@ -2,6 +2,4 @@
 
 <% url = "#{request.protocol}#{request.host_with_port}#{asset_path('resume.pdf')}" %>
 
-<p><%= url %></p>
-
-<iframe src="http://docs.google.com/gview?url=<%= url %>&embedded=true" style="width:1170px; height:800px;" frameborder="0"></iframe>
+<iframe src="http://docs.google.com/gview?url=<%= url %>&embedded=true" style="width:1170px; height:800px;" frameborder="0" class="resume"></iframe>
