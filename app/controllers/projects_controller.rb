@@ -17,4 +17,8 @@ class ProjectsController < ApplicationController
   def hpc
     @header = @@header
   end
+
+  def wip
+    @header = @@header
+  end
 end

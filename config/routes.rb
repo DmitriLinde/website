@@ -7,11 +7,11 @@ Rails.application.routes.draw do
 
   get 'projects' => 'projects#index'
 
-  get 'projects/label_doc' => 'projects#label_doc'
+  get 'projects/label_doc' => 'projects#wip'
 
-  get 'projects/hoo' => 'projects#hoo'
+  get 'projects/hoo' => 'projects#wip'
 
-  get 'projects/harry_potter_clock' => 'projects#hpc'
+  get 'projects/harry_potter_clock' => 'projects#wip'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

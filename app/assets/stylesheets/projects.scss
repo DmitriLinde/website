@@ -51,6 +51,23 @@ hr {
     margin-top: -120px;
 }
 
+.more-info-link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Light","Helvetica Neue," Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.wip-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-width: 979px) {
     .featurette-image.pull-left, .featurette-image.pull-right {
         display: block;
