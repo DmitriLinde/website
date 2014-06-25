@@ -8,10 +8,6 @@ class WelcomeController < ApplicationController
     @header = "About"
   end
 
-  def projects
-    @header = "Projects"
-  end
-
   def contact
     @header = "Contact"
   end
