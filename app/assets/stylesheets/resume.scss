@@ -8,3 +8,20 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.download-link {
+    padding-bottom: 35px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Light","Helvetica Neue," Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-link:hover {
+    color: #A9A9A9;
+    text-decoration: none;
+}

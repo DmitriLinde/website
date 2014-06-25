@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'resume' => 'welcome#resume'
 
+  get 'resume/download' => 'welcome#download_resume'
+
   get 'contact' => 'welcome#contact'
 
   get 'projects' => 'projects#index'

@@ -13,6 +13,13 @@ class WelcomeController < ApplicationController
     @header = 'Resume'
   end
 
+  def download_resume
+    send_file(
+      "#{Rails.root}/app/assets/pdf/resume.pdf",
+      filename: "dmitri-linde-resume.pdf",
+      type: "application/pdf")
+  end
+
   def contact
     @header = "Contact"
   end
